@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat&family=Noto+Sans:wght@200;400&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,p {
+    pointer-events: none;
+    color: #000;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+background-color: #23649b;
+}
+
+video::-internal-media-controls-overlay-cast-button {
+    display: none;
+}
+#videobg {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 40rem;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+#loader-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9999; /* Ensure it's on top of other content */
+    border-radius: 0;
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+	background-color: #23649b;
+}
+
+#model {
+    object-fit: contain;
+    height: 60vh;
+    width: auto;
+    margin-left: 20rem;
+    
+    
+}
+model-viewer {
+    width: 100vh;
+    height: 90vh;
+}
+
+@font-face {
+    font-family: "MB NOIR W01 Regular";
+    src: url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.eot");
+    src: url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/27b6553567e6f884a9e8edda438d4746.svg#MB NOIR W01 Regular")format("svg");
+}
+#home {
+    background-image: url('./posterweb.png');
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+	width: 100%;
+	height: 100%;
+	background-color: #0b7eb0;
+    position: relative;
+    z-index: 2;
+}
+
+#headingi {
+	margin-left: 5rem;
+	margin-top: -19rem;
+
+	width:  78rem;
+}
+
+
+#about {
+    background-image: url('./bg.png');
+    background-size: cover;
+}
+#about1 {
+    background-image: url('./bg.png');
+    background-size: cover;
+}
+.content-about {
+    width: 100%;
+    height: 38rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headinga {
+    width: 25rem;
+    position: relative;
+    z-index: 10;
+margin-left: 4rem;
+opacity: 0;
+margin-top: -50px;
+}
+
+
+.rectangle {
+    width: 35rem;
+    height: 22rem;
+    position: absolute;
+    z-index: 10;
+    background: rgba(217, 217, 217, 0.38);
+    border-left: 4px solid #FFFFFF;
+box-shadow: inset 0px 0px 132.3px 17px rgba(0, 30, 52, 0.8);
+backdrop-filter: blur(1px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 28px;
+float: right;
+margin-right: 40rem;
+
+z-index: 5;
+top: 50px;
+
+}
+
+#rectangle1 {
+    margin-right: -40rem;
+
+z-index: 5;
+top: 200px;
+}
+
+#polygon {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right: 3rem;
+    opacity: 0;
+}
+#polygon3 {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right: 3rem;
+    opacity: 0;
+}
+
+
+
+
+
+#rect {
+   position: relative;
+width: 20rem;
+height: 400px;
+opacity: 0;
+background: rgba(217, 217, 217, 0.38);
+border-left: 4px solid #FFFFFF;
+box-shadow: inset 0px 0px 132.3px 17px rgba(0, 30, 52, 0.8);
+backdrop-filter: blur(17.55px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 28px;
+transform: rotate(-11.83deg);
+float: right;
+margin-right: 3rem;
+margin-top: -24rem;
+z-index: 5;
+}
+
+
+#rect1 {
+   position: relative;
+width: 20rem;
+height: 400px;
+opacity: 0;
+background: rgba(217, 217, 217, 0.38);
+border-left: 4px solid #FFFFFF;
+box-shadow: inset 0px 0px 132.3px 17px rgba(0, 30, 52, 0.8);
+backdrop-filter: blur(17.55px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 28px;
+transform: rotate(-11.83deg);
+float: right;
+margin-right: 3rem;
+margin-top: -18rem;
+z-index: 5;
+}
+
+
+#db {
+position: absolute;
+width: 20rem;
+height: 650px;
+transform: matrix(0.98, -0.01, 0.01, 0.98, 20, 6);
+
+}
+#pyro {
+position: absolute;
+width: 80%;
+height: 70%;
+transform: matrix(0.98, -0.01, 0.01, 0.98, 20, 10);
+
+}
+
+
+#polygon2 {
+     width: 15rem;
+    height: 15rem;
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin-top: -15rem;
+    margin-right: -5rem;
+    opacity: 0;
+}
+#polygon4 {
+     width: 15rem;
+    height: 15rem;
+    position: relative;
+    z-index: 2;
+    float: right;
+    margin-top: -10rem;
+    margin-right: -5rem;
+    opacity: 0;
+}
+
+/* 
+.rectangle::before{
+  width: 70rem;
+  height: 550px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 500px rgba(1,21,34,0.7);
+  filter: blur(10px);
+} */
+#heading-about {
+    font-size: 4rem;
+    margin-left: 4rem;
+    color: #fff;
+    margin-top: 0rem;
+    font-family: "Montserrat", sans-serif;   
+    opacity: 0;
+}
+
+#heading-about::first-letter {
+    font-size:5rem;
+}
+#heading-about1 {
+    font-size: 4rem;
+    margin-left: 7rem;
+    color: #fff;
+    margin-top: 0rem;
+    font-family: "MB NOIR W01 Regular"; 
+    opacity: 0;
+    font-weight: 100
+ 
+}
+
+#heading-about1::first-letter {
+    font-size:5rem;
+}
+
+
+.sub {
+    margin-left: 5rem;
+    color: #fff;
+}
+
+
+
+#description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 30rem;
+    font-weight: 100;
+    margin-top: -3rem;
+    color: #fff;
+    margin-left: 3rem;
+    opacity: 0;
+}
+#description1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    width: 25rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    color: #fff;
+    margin-left: 5rem;
+    opacity: 0;
+}
+
+
+
+#events {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heading-events {
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 1rem;
+
+    opacity:  0;
+    color: #fff;    
+    
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.8rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    border: 2px solid #b4b4b4;
+    display: flex;
+    flex-direction: column;
+    width: 59rem;
+    height: 8rem;
+    border-radius: 20px;
+    position: relative; /* Add position relative */
+    opacity:  0;
+}
+
+
+
+.card-video video {
+    border-radius: 20px;
+    position: absolute; 
+    top: 0; left:0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+.content {
+    z-index: 1; /* Ensure content appears above the video */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute items along the main axis */
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%; /* Ensure content takes up full width */
+}
+
+h2 {
+    font-family: "Noto Sans", sans-serif;
+    color: #fff;
+}
+
+p {
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+
+
+.logom {
+    margin-left: 23rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+#card-head {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    width: 5rem;
+    margin-top: -1rem;
+}
+
+#card-d {
+    
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 100;
+    color: #979797;
+   margin-left: 4rem;
+    width: 25rem;
+}
+
+.btn.visit {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #b4b4b4;
+    border-radius: 40px;
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    transition: all 200ms ease-in-out;
+
+}
+
+.visit:hover {
+    background-color:transparent;
+    color: #fff;
+
+}
+
+#team {
+    padding-bottom: 5rem;
+}
+
+#heading-team {
+    font-size: 4rem;
+    margin-right:  4rem;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+}
+
+.link {
+	text-decoration: none;
+}
+
+
+
+#heading-update {
+      font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 1rem;
+    margin-left: 5rem;
+    color: #fff;    
+}
+
+.update-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+iframe {
+    width: 600px;
+    height: 350px;
+    border-radius: 30px;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.card-container-update {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 20rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.text {
+    color: #fff;
+}
+
+#card-update {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid white;
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #262626;
+}   
+
+.card-title {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+   
+    width: 25rem;
+}
+.card-text {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+    width: 25rem;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+#trailer-video {
+    padding-top: 3rem;
+    width: 90%;
+    height: 600px;
+    border-radius: 30px;
+    margin-left: 5rem;
+    padding-bottom: 3rem;
+    border: 2px solid white;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper:before, .wrapper:after {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 100%;
+}
+.wrapper:before {
+  left: 0;
+  background: linear-gradient(90deg, #222, transparent);
+}
+.wrapper:after {
+  right: 0;
+  background: linear-gradient(-90deg, #222, transparent);
+}
+.team-container {
+      position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding-top: 5rem;
+}
+.items.active {
+  cursor: grab;
+}
+
+#mem-rect {
+background: rgba(217, 217, 217, 0.19);
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(6.25px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 28px;
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+width: 22rem;
+height: 14rem;
+position: relative;
+display: inline-block;
+  margin-left: 20px;
+  user-select: none;
+  line-height: 230px;
+}
+
+.memimage {
+   width: 8rem;
+   height: 8rem;
+   border-radius: 100%;
+   background-image: url("./reyansh.jpg");
+   position: absolute;
+   z-index: 10;
+   background-size: contain;
+   left: 7rem;
+   top: -4rem;
+}
+
+.memimage:last-child {
+    margin-right: 20px;
+}
+
+.memname {
+    margin-top: -1rem;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 22rem;
+    text-align: center;
+}
+
+#opt {
+     margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 3rem;
+}
+#opt1 {
+     margin-top: 3rem;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.memdes {
+     margin-top: -10rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 20rem;
+    margin-left: 1rem;
+}
+
+.active {
+    color: #2AE1FF;
+}
+
+@media screen and (min-width: 1300px){
+    #model {
+        height: 55vh;
+    }  
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-in-out;
+}
+
+#heading-popup {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 1rem;
+    
+    color: #fff;    
+}
+ #description-popup {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    width: inherit;
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+    margin-left: 6rem;
+}
+
+#init {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 1.5rem;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    margin-left: 21rem;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+#init span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}#init:hover {
+    color: black;
+}
+
+#init:hover span {
+    transform: translateY(0) scale(4);
+}
+#init span:nth-child(1) {
+    --n: 1;
+}
+
+#init span:nth-child(2) {
+    --n: 2;
+}
+
+#init span:nth-child(3) {
+    --n: 3;
+}
+
+#init span:nth-child(4) {
+    --n: 4;
+}
+
+
+.popup-content {
+    background-color: #23649b;
+    margin: 3% auto;
+    padding: 20px;
+    border: 2px solid #fff;
+    width: 80%;
+    max-width: 1000px;
+    overflow-y: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1300px){
+    .card-container {
+        margin-left: 12.8rem;
+    }
+}
+
+
+@media screen and (min-width:1900px){
+    #home {
+        height: 70rem;
+    }
+    #headingi {
+        padding-top: 15rem;
+        width: 120rem;
+    }
+    #about, #about1 {
+        height: 70rem;
+    }
+    .rectangle {
+        margin-top: 35rem;
+    }
+
+    #rect {
+        width: 30rem;
+        height: 600px;
+        margin-top: -28rem;
+    }
+    #rect1 {
+        width: 30rem;
+        height: 600px;
+        margin-top: -28rem;
+    }
+    #db {
+        height: 900px;
+        width: 35rem;
+        top: -200px;
+        left: -100px;
+    }
+    #pyro {
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+    #description {
+        font-size: 2rem;
+        width: 40rem;
+    }
+    #description1 {
+        font-size: 2rem;
+        width: 40rem;
+    }
+    #polygon2 {
+        margin-top: -2rem;
+    }
+    .content-about {
+        height: 65rem;
+        }
+    .rectangle::before {
+        width: 100rem;
+  height: 70rem;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  box-shadow: inset 0 0 0 1000px rgba(1,21,34,0.7);
+  filter: blur(10px);
+    }
+    .card-container {
+        margin-left: 32rem;
+    }
+    .row {
+        margin-left: 20rem;
+    }
+
+}
+#guide {
+    height: 50rem;
+    pointer-events: none;
+}
+
+#guide-heading {
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;    
+    padding-top: 2rem;
+    margin-left:  2rem;
+    text-align: center;
+}
+
+.row {
+    padding-top:  3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+}
+
+p {
+    width: 35rem;
+    font-family: "Noto Sans", sans-serif;
+    flex: 1;
+    font-weight: 100;
+
+}
+
+.shade {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shade:hover {
+    color: #0EECE4;
+}
+
+#eventbody {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 7.5rem;
+    margin-top: 5rem;
+}
+
+#rect-event {
+    width: 65rem;
+    height: 15rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+}
+
+.information {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+.eventcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+#elig {
+    margin-top: 2rem;
+}
+.logo {
+    width: 20%;
+    margin-left: 2rem;
+}
+#rectheading {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-top: -12rem;
+    }
+
+
+
+#subtext {
+     font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 100;
+    width: 60rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.tasks {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.list {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+.item {
+    color: white;
+     font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#snap {
+    margin-top: 1rem;
+}
+
+#ad {
+    margin-top: 1rem;
+}
+
+#kuriovation {
+    margin-top: 1rem;
+}
+
+#game {
+    margin-top: 1rem;
+}
+
+#script {
+    margin-top: 1rem;
+}
+
+#crypt {
+    margin-top: 1rem;
+}
+
+#scratch {
+    margin-top: 1rem;
+}
