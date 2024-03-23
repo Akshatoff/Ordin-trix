@@ -21,8 +21,8 @@ let widthmax = '35rem'; // Default height value
 
 // Check if screen resolution is over 1900
 if (screenWidth > 1900) {
-    heightMax = '70rem'; // Set height to 70rem
-    widthmax = "100rem"
+    heightMax = '36rem'; // Set height to 70rem
+    widthmax = "55rem"
 }
 
 // Animation properties for rectangle
