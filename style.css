@@ -15,7 +15,7 @@ body, html {
 	width: 100%;
 	height: 100%;
     background-color: #0b7eb0;
-
+    overflow-x: hidden;
 }
 
 video::-internal-media-controls-overlay-cast-button {
@@ -42,10 +42,10 @@ video::-internal-media-controls-overlay-cast-button {
     border-radius: 0;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 2px;
 	background-color: #23649b;
-}
+} */
 
 #model {
     object-fit: contain;
@@ -388,7 +388,7 @@ p {
 
 
 .logom {
-    margin-left: 23rem;
+    margin-left: 3rem;
     width: 15rem;
     height: 15rem;
 }
@@ -668,8 +668,8 @@ display: inline-block;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-weight: 400;
-    padding-top: 1rem;
-    
+    margin-top: -13rem;
+    margin-left: 12rem;
     color: #fff;    
 }
  #description-popup {
@@ -679,69 +679,8 @@ display: inline-block;
     text-align: center;
     margin-top: 1rem;
     color: #fff;
-    margin-left: 6rem;
-}
-
-#init {
-    --c: goldenrod;
-    color: var(--c);
-    font-size: 1.5rem;
-    border: 0.3em solid var(--c);
-    border-radius: 0.5em;
-    width: 12em;
-    height: 3em;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-    letter-spacing: 0.1em;
-    text-align: center;
-    line-height: 2em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    margin-top: 2rem;
-    font-family: "Poppins", sans-serif;
-    margin-left: 21rem;
-    cursor: pointer;
-}
-
-.link {
-    text-decoration: none;
-}
-
-#init span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: var(--c);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
-}#init:hover {
-    color: black;
-}
-
-#init:hover span {
-    transform: translateY(0) scale(4);
-}
-#init span:nth-child(1) {
-    --n: 1;
-}
-
-#init span:nth-child(2) {
-    --n: 2;
-}
-
-#init span:nth-child(3) {
-    --n: 3;
-}
-
-#init span:nth-child(4) {
-    --n: 4;
+    margin-left: 20rem;
+    width: 35rem;
 }
 
 
@@ -751,11 +690,12 @@ display: inline-block;
     padding: 20px;
     border: 2px solid #fff;
     width: 80%;
-    max-width: 1000px;
     overflow-y: auto;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   height: 160%;
 }
+
 
 .close {
     color: #aaa;
@@ -927,6 +867,7 @@ p {
 .eventcontent {
     display: flex;
     flex-direction: column;
+    margin-left: 15rem;
 }
 
 #elig {
@@ -953,7 +894,7 @@ p {
     font-weight: 100;
     width: 60rem;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 0.1rem;
 }
 
 .tasks {
