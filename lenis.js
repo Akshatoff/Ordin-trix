@@ -201,24 +201,24 @@ window.addEventListener("focus", function() {
 });
 
 
-window.addEventListener("load", function() {
+// window.addEventListener("load", function() {
     
-    const loaderVideo = document.getElementById("loader-video");
-    const content = document.getElementById("fullpage");
+//     const loaderVideo = document.getElementById("loader-video");
+//     const content = document.getElementById("fullpage");
     
 
     
-    content.style.display = "none";
+//     content.style.display = "none";
     
-    // Listen for the ended event on the loader video
-    loaderVideo.addEventListener("ended", function() {
-        // Hide the loader video
-        loaderVideo.style.display = "none";
-        // Display the website content
-        content.style.display = "block";
-        loaderVideo.style.zIndex = '-10'
-    });
-});
+//     // Listen for the ended event on the loader video
+//     loaderVideo.addEventListener("ended", function() {
+//         // Hide the loader video
+//         loaderVideo.style.display = "none";
+//         // Display the website content
+//         content.style.display = "block";
+//         loaderVideo.style.zIndex = '-10'
+//     });
+// });
 
 
 function showPopup(event) {
@@ -229,13 +229,4 @@ function closePopup(event) {
     document.getElementById(`popup_${event}`).style.display = "none";
 }
 
-const lenis = new Lenis();
-
-lenis.on('scroll', ScrollTrigger.update);
-
-gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-});
-
-gsap.ticker.lagSmoothing(0);
 
