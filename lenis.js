@@ -144,14 +144,12 @@ ScrollTrigger.create({
     start: "top 10%", 
     onEnter: () => {
 
-        anime(animationProperties)
-        anime(animationProperties1)
         setTimeout(() => {
             fadeInc(abouttitle);
         fadeInc(description);
         fadeInc(abouttitle2);
         fadeInc(descriptionsecond);
-    }, 2000)
+    }, 200)
         
     },
     once: false 
