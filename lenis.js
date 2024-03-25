@@ -207,24 +207,24 @@ window.addEventListener("focus", function() {
 });
 
 
-// window.addEventListener("load", function() {
+window.addEventListener("load", function() {
     
-//     const loaderVideo = document.getElementById("loader-video");
-//     const content = document.getElementById("fullpage");
+    const loaderVideo = document.getElementById("loader-video");
+    const content = document.getElementById("fullpage");
     
 
     
-//     content.style.display = "none";
+    content.style.display = "none";
     
-//     // Listen for the ended event on the loader video
-//     loaderVideo.addEventListener("ended", function() {
-//         // Hide the loader video
-//         loaderVideo.style.display = "none";
-//         // Display the website content
-//         content.style.display = "block";
-//         loaderVideo.style.zIndex = '-10'
-//     });
-// });
+    // Listen for the ended event on the loader video
+    loaderVideo.addEventListener("ended", function() {
+        // Hide the loader video
+        loaderVideo.style.display = "none";
+        // Display the website content
+        content.style.display = "block";
+        loaderVideo.style.zIndex = '-10'
+    });
+});
 
 
 function showPopup(event) {

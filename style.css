@@ -1060,3 +1060,59 @@ transition: all 200ms ease-in-out;
         margin-left: 20rem;
     }
 }
+
+@media screen and (max-width:400px){
+    body,html {
+/*         overflow-x: auto; */
+    }
+    #home {
+        height: 43rem;
+        background-image: url('./mobile.png');
+    }
+    #about {
+        height: 68rem;
+    }
+    #rectangle {
+        margin-left: 40rem;
+        width: 25rem;
+        height: 30rem;    
+    }
+    #rectangle1 {
+        margin-top: 25rem;
+        margin-left: -40rem;
+        width: 25rem;
+        height: 30rem;
+    }
+
+    #description {
+        width: 22rem;
+    }
+    #description1 {
+        width: 22rem;
+        margin-left: 2rem;
+    }
+    #headinga {
+        margin-left: 1rem;
+    }
+    #heading-about1 {
+        margin-left: 3rem;
+    }
+    #videobg {
+        display: none;
+    }
+    #guide {
+        height: 103rem;
+    }
+    #guide-heading {
+        font-size: 3rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .col p {
+        width: 25rem;
+
+    }
+}
