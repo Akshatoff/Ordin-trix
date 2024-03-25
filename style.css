@@ -37,7 +37,7 @@ video::-internal-media-controls-overlay-cast-button {
     padding: 25px 1.5rem;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.8);
-    position: relative;
+    position: sticky;
     z-index: 5;
     border-bottom: 2px solid white;
 }
@@ -202,13 +202,9 @@ model-viewer {
 
 
 #about {
-    background-image: url('./bg.png');
-    background-size: cover;
+    
 }
-#about1 {
-    background-image: url('./bg.png');
-    background-size: cover;
-}
+
 .content-about {
     width: 100%;
     height: 38rem;
@@ -401,17 +397,17 @@ transform: matrix(0.98, -0.01, 0.01, 0.98, 20, 10);
 
 #description {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    width: 30rem;
+    font-size: 1rem;
+    width: 33rem;
     font-weight: 100;
     margin-top: -3rem;
     color: #fff;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     opacity: 0;
 }
 #description1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 25rem;
     font-weight: 100;
     margin-top: 0.5rem;
@@ -626,16 +622,6 @@ iframe {
     width: 25rem;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #fff;
-  color: #333;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 
 #trailer-video {
     padding-top: 3rem;
@@ -684,12 +670,47 @@ display: inline-block;
    width: 8rem;
    height: 8rem;
    border-radius: 100%;
-   background-image: url("./reyansh.jpg");
    position: absolute;
    z-index: 10;
-   background-size: contain;
+   background-size: cover;
+
    left: 7rem;
    top: -4rem;
+}
+
+#rey {
+    background-image: url('./Photos/reyansh.jpg');
+}
+
+#atharva {
+     background-image: url('./Photos/reyansh.jpg');
+}
+
+#arnav {
+    background-image: url('./Photos/arnav.png');
+}
+
+#tan {
+    background-image: url('./Photos/tanveer.jpeg');
+}
+#lav {
+ background-image: url('./Photos/lavnika.jpg');
+}
+#nad {
+    background-image: url('./Photos/AR Nadal Verma.jpg');
+
+}
+
+#har {
+     background-image: url('./Photos/harshit.jpeg');
+}
+
+#ane {
+    background-image: url('./Photos/aneira.jpg');
+}
+#aks {
+    background-image: url('./Photos/aks.jpg');
+    background-position-x: -50px;
 }
 
 .memimage:last-child {
@@ -737,9 +758,18 @@ display: inline-block;
 }
 
 @media screen and (min-width: 1300px){
+    #home {
+        height: 45rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #033680;
+    }
     #model {
         height: 55vh;
     }  
+    .row {
+        margin-left: 3rem;
+    }
 }
 
 .popup {
@@ -775,6 +805,11 @@ display: inline-block;
     width: 35rem;
 }
 
+#guide {
+    height: 50rem;
+   }
+
+
 
 .popup-content {
     background-color: #033860;
@@ -804,98 +839,6 @@ display: inline-block;
     cursor: pointer;
 }
 
-@media screen and (min-width:1300px){
-    .card-container {
-        margin-left: 12.8rem;
-    }
-}
-
-
-@media screen and (min-width:1900px){
-    #home {
-        height: 70rem;
-    }
-    #headingi {
-        padding-top: 15rem;
-        width: 120rem;
-    }
-    #about, {
-        height: 70rem;
-    }
-    .rectangle {
-        top: 50px;
-        margin-right: 59rem;
-        width: 55rem;
-        height: 36rem;
-    }
-
-    #heading-about1 {
-        font-size: 7rem;
-        margin-left: 14rem;
-    }
-
-    #rectangle1 {
-        margin-right: -60rem;
-        top: 450px;
-    }
-    #headinga {
-        width: 35rem;
-        margin-left: 8rem;
-    }
-
-    #rect {
-        width: 30rem;
-        height: 600px;
-        margin-top: -28rem;
-    }
-    #rect1 {
-        width: 30rem;
-        height: 600px;
-        margin-top: -28rem;
-    }
-    #db {
-        height: 900px;
-        width: 35rem;
-        top: -200px;
-        left: -100px;
-    }
-    #pyro {
-        margin-top: 5rem;
-        margin-left: 2rem;
-    }
-    #description {
-        font-size: 2rem;
-        width: 50rem;
-    }
-    #description1 {
-        font-size: 2rem;
-        width: 40rem;
-    }
-    #polygon2 {
-        margin-top: -2rem;
-    }
-    .content-about {
-        height: 65rem;
-        }
-    
-    .card-container {
-        margin-left: 32rem;
-    }
-    .row {
-        margin-left: 20rem;
-    }
-    p {
-        width: 55rem;
-        font-size: 1.5rem;
-    }
-    #guide {
-        height: 80rem;
-    }
-
-}
-#guide {
-    height: 50rem;
-   }
 
 #guide-heading {
     font-size: 5rem;
@@ -961,6 +904,7 @@ transition: all 200ms ease-in-out;
     display: flex;
     flex-direction: column;
     margin-left: 15rem;
+    margin-bottom: 2rem;
 }
 
 #elig {
@@ -981,13 +925,14 @@ transition: all 200ms ease-in-out;
 
 
 #subtext {
-     font-size: 1rem;
+     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-weight: 100;
     width: 60rem;
     margin-top: 2rem;
     margin-left: 0.1rem;
+    margin-bottom: 1rem;
 }
 
 .tasks {
@@ -1035,4 +980,83 @@ transition: all 200ms ease-in-out;
 
 #scratch {
     margin-top: 1rem;
+}
+
+
+@media screen and (min-width:1300px){
+    .card-container {
+        margin-left: 12.8rem;
+    }
+}
+
+
+@media screen and (min-width:1900px){
+    #home {
+        height: 63rem;
+    }
+    #headingi {
+        padding-top: 15rem;
+        width: 120rem;
+    }
+    #about, {
+        height: 70rem;
+    }
+    .rectangle {
+        top: 50px;
+        margin-right: 59rem;
+        width: 55rem;
+        height: 36rem;
+    }
+
+    #heading-about1 {
+        font-size: 7rem;
+        margin-left: 14rem;
+    }
+
+    #rectangle1 {
+        margin-right: -60rem;
+        top: 450px;
+    }
+    #headinga {
+        width: 35rem;
+        margin-left: 8rem;
+    }
+
+    
+
+    
+    #description {
+        font-size: 1.6rem;
+        width: 53rem;
+    }
+    #description1 {
+        font-size: 1.8rem;
+        width: 48rem;
+    }
+    .content-about {
+        height: 65rem;
+        }
+    
+    .card-container {
+        margin-left: 32rem;
+    }
+    .row {
+        margin-left: 2.5rem;
+    }
+    p {
+        width: 55rem;
+        font-size: 1.2rem;
+    }
+    #guide {
+        height: 55rem;
+    }
+    .popup-content {
+        height: 100%;
+    }
+    #description-popup {
+        margin-left: 36rem;
+    }
+    #subtext {
+        margin-left: 20rem;
+    }
 }
