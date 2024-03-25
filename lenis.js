@@ -33,6 +33,41 @@ if (screenWidth > 1900) {
     widthmax = "55rem"
 }
 
+if (screenWidth > 1200) {
+    
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+    trigger: about,
+    start: "top 10%", 
+    onEnter: () => {
+
+        setTimeout(() => {
+            fadeInc(abouttitle);
+        fadeInc(description);
+        fadeInc(abouttitle2);
+        fadeInc(descriptionsecond);
+    }, 200)
+        
+    },
+    once: false 
+});
+
+ScrollTrigger.create({
+    trigger: events,
+    start: "top 70%", 
+    onEnter: () => {
+        
+        setTimeout(() => {
+            fadeIne(eventtitle);
+        fadeInc(cards);
+    }, 100)
+        
+    },
+    once: false 
+});
+}
+
 // Animation properties for rectangle
 const animationProperties = {
     targets: rectangle,
@@ -145,37 +180,6 @@ function fadeIn5(element) {
     timeline.play(); // Ensure the timeline is played
 }
 
-gsap.registerPlugin(ScrollTrigger);
-
-ScrollTrigger.create({
-    trigger: about,
-    start: "top 10%", 
-    onEnter: () => {
-
-        setTimeout(() => {
-            fadeInc(abouttitle);
-        fadeInc(description);
-        fadeInc(abouttitle2);
-        fadeInc(descriptionsecond);
-    }, 200)
-        
-    },
-    once: false 
-});
-
-ScrollTrigger.create({
-    trigger: events,
-    start: "top 70%", 
-    onEnter: () => {
-        
-        setTimeout(() => {
-            fadeIne(eventtitle);
-        fadeInc(cards);
-    }, 100)
-        
-    },
-    once: false 
-});
 
 
 
