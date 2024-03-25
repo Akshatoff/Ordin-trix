@@ -14,6 +14,14 @@ const mem = document.getElementById("opt");
 const alu = document.getElementById("opt1");
 const memcontainer = document.getElementById("memcontainer");
 const alucontainer = document.getElementById("alucontainer");
+const hamburguer = document.getElementById("burger-menu")
+const navMenu = document.querySelector(".list-nav-bar")
+
+
+hamburguer.addEventListener("click", ()=>{
+    hamburguer.classList.toggle('active');
+    navMenu.classList.toggle('active');
+})
 const screenWidth = window.innerWidth;
 
 let heightMax = '22rem'; // Default height value
